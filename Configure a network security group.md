@@ -33,43 +33,28 @@ First I created two security groups in Microsoft Azure.<br />
 <img src="https://i.imgur.com/6Pz8rP0.png"  height="80%" width="80%" <br />
 <br />
 And a network Security Group.<br />
-<br /> Once I had signed in with my IAM account I could start the task actual. Which begun by creating a DynamoDB table. To do this I navigated to DynamoDB using the AWS console, created a table, selected a name, and Partition key. As I am using a free teir I inspected the cost calculator. I turned off auto scaling for the read/write capacity this will ensure my account stays within the free teir limits.<br/>
+<br /> I then Associated the network Security group to the Subnet on the Vnet. This was done through the Network security group<br/>
 <br />
-<img src="https://i.imgur.com/g0UKGkh.png"  height="80%" width="80%" <br /> 
+<img src="https://i.imgur.com/usW5zVN.png" height="80%" width="80%" <br /> 
 <br />
-<br />I then created an item, gave it a name, and gave it an attribute.<br />
+<br />I then associated the application security group to the resource group on the Linux virtual machine we are using. This was done trough the virtual machine .<br />
 <br />
- <img src="https://i.imgur.com/5CHoY9K.png"  height="80%" width="80%"  
+ <img src="https://i.imgur.com/7MXUZtr.png"  height="80%" width="80%"<br />
  <br />
 <br />
 <br />
-From here I opened up CloudShell and ran a script to automate table creation. I created 4 different tables with different names, attributes, and one with a sort key<br/>
+From here I tried connecting to the Linux virtual machine through cloud shell. The request timed out as the network security group did not have an incoming rule to allow SSH<br/>
 <br />
-<br /> <img src="https://i.imgur.com/ND0g1NZ.png"  height="80%" width="80%" <br />
+<br /> <img src="https://i.imgur.com/y0198OS.png"  height="80%" width="80%" <br />
 <br />
-<br />I then confirmed that these tables were created by running a wait command in cloud shell. I went back to the console.<br />
+<br />I then created an Inbound Rule to allow SSH traffic<br />
 <br />
--<br /><img src="https://i.imgur.com/cl2hre1.png"  height="80%" width="80%" <br />
+-<br /><img src=https://i.imgur.com/1h4gylR.png"  height="80%" width="80%" <br />
  <br />
-<br /> To populate the tables with data I used cloudshell to download and unzip a file that contained data for my tables. I used batch-write-item cmd to insert multiple items into the tables.<br />
+<br /> The last thing I did was to test the connection to confirm that the Inbound rule was active.<br />
 <br />
-<br /><img src="https://i.imgur.com/1TjHlSa.png"  height="80%" width="80%"<br /> 
+<br /><img src="https://i.imgur.com/zmr9ihE.png"80%" width="80%"<br /> 
 <br />
 <br />
-I then had alook at the tables in the console adjusted some attributes. To end I deleted all the content in this project using cloudshell<br/>
-<br /><img src="https://i.imgur.com/mFiYohf.png"  height="80%" width="80%" <br />
-<br />
- <br /> End<br />
-<br />
+End<br/>
 
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
