@@ -1,26 +1,29 @@
-<h1>Azure Network Security Group</h1>
+<h1>AI Report Generation</h1>
 
 <h2>Problem</h2>
-Needed a solution that would keep servers secure while still making it easy for administrators to log in.<br />
+- Report writing for candidate interviews is one of many things that a recruiter must do. It takes alot of hours to write reports, which may mean that recruiters are working longer hours or having to prioritise writing reports over other processing, or attraction opportunities. This could lead to missing targets, poor candidate experiences, or recruiter burnout. <br />
 
 <h2>Solution</h2>
-- Created an Application Security Group(ASG), which allowed me to group the virtual machines for easier management.<br />
-- Created a security group for the network, controlling the traffic allowed in and out.<br />
-- Linked the network security group to the subnet so that everything can follow the same rules.<br />
-- Linked the network security group to the virtual machine's network card so rules apply to the server.<br />
-- Added a rule that only allows secure shell (SSH) traffic from trusted sources, blocked everything else.<br />
+- Create a AI interview report generator that is embedded into SalesForce which is easy to use, intergrates into existing workflows, and keeps candidate information private and secure. It will also produce objectional scoring, with clear, and concise section summarys, which still remain editable.<br />
+
+<h2>Steps</h2>
+
+1. Develop free tier concept using google colab, and Gemeni API's.<br />
+2. Demonstrate to Manager, Gain access to salesforce.<br />
+3. Develop Application with salesforce intergration.<br />
+4. Test Application and work through bugs.<br />
+5. Deploy Application for use in the wider organisation.<br />
 
 <h2>Results</h2>
-- Better security: Only trusted connections can reach the servers.<br />
-- Less Manual work: automated rules for servers even when adding more.<br />
-- Cost Savings: reduction in outages and security breaches.<br />
+- Increased Efficiency: 100's of hours saved for recruiters.<br />
+- Increased Output: Recruiters can spend more time in other functions such as attraction and mentoring.<br />
 
 
 <h2>Tools Used </h2>
 
-- <b>Azure</b>
-- <b>Linux Virtual Machine</b>
-- <b>Cloudshell</b>
+- <b>Google Colab</b>
+- <b>Gemini API</b>
+- <b>SalesForce</b>
 
 <h2>walk-through:</h2>
 
