@@ -28,36 +28,11 @@
 <h2>walk-through:</h2>
 
 <p align="center">
-First I created two security groups in Microsoft Azure.<br />
+To develop the free tier concept I used google colab to develop, write, and run my "application". During this process there were alot of issues with the free tier API as I was trying to use Open AI, but once I switched to Gemini it started to work. The quality of report that the Gemini API produces is subpar but it proves the concept.<br />
 <br />
-<img src="https://i.imgur.com/wRz0ApG.png"  height="80%" width="80%" <br />
-<br />An application Security Group.<br />
+<img src="https://i.imgur.com/PX621jm.jpeg"  height="80%" width="80%" <br />
+ <br />Above is an example of the script used.<br />
+<br />When The script is run it uploads a blank interview performa for the API to reference. It then prompts the user to upload a document (the interview notes). It then sends the notes to the Gemini API and once analysed it downloads a doc.x file to the users device. .<br />
 <br />
-<img src="https://i.imgur.com/6Pz8rP0.png"  height="80%" width="80%" <br />
-<br />
-And a network Security Group.<br />
-<br /> I then Associated the network Security group to the Subnet on the Vnet. This was done through the Network security group<br/>
-<br />
-<img src="https://i.imgur.com/usW5zVN.png" height="80%" width="80%" <br /> 
-<br />
-<br />I then associated the application security group to the resource group on the Linux virtual machine we are using. This was done trough the virtual machine .<br />
-<br />
- <img src="https://i.imgur.com/7MXUZtr.png"  height="80%" width="80%"<br />
- <br />
-<br />
-<br />
-From here I tried connecting to the Linux virtual machine through cloud shell. The request timed out as the network security group did not have an incoming rule to allow SSH<br/>
-<br />
-<br /> <img src="https://i.imgur.com/y0198OS.png"  height="80%" width="80%" <br />
-<br />
-<br />I then created an Inbound Rule to allow SSH traffic<br />
-<br />
--<br /><img src=https://i.imgur.com/1h4gylR.png"  height="80%" width="80%" <br />
- <br />
-<br /> The last thing I did was to test the connection to confirm that the Inbound rule was active.<br />
-<br />
-<br /><img src="https://i.imgur.com/zmr9ihE.png"80%" width="80%"<br /> 
-<br />
-<br />
-End<br/>
-
+<img src="https://i.imgur.com/PcnpLGM.png"  height="80%" width="80%" <br />
+<br /> Above is the prompt to upload the blank interview performa.<br />
