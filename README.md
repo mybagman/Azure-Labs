@@ -1,2 +1,2 @@
-# Azure-Labs
-Skillsoft Labs 
+# AI Report Generator
+Project
