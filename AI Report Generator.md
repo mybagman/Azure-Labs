@@ -32,7 +32,9 @@ To develop the free tier concept I used google colab to develop, write, and run 
 <br />
 <img src="https://i.imgur.com/PX621jm.jpeg"  height="80%" width="80%" <br />
  <br />Above is an example of the script used.<br />
-<br />When The script is run it uploads a blank interview performa for the API to reference. It then prompts the user to upload a document (the interview notes). It then sends the notes to the Gemini API and once analysed it downloads a doc.x file to the users device. .<br />
+<br />When The script is run it uploads a blank interview performa for the AI to reference. It then prompts the user to upload a document (the interview notes). It then sends the notes to the Gemini AI and once analysed it downloads a doc.x file to the users device. This was the easiest way to prove the concept while also being able to demonstrate it from anywhere.<br />
 <br />
 <img src="https://i.imgur.com/PcnpLGM.png"  height="80%" width="80%" <br />
 <br /> Above is the prompt to upload the blank interview performa.<br />
+<img src="https://i.imgur.com/yJpyYKb.png"  height="80%" width="80%" <br />
+<br />Above is the output of the script. Where the AI produces a Report sending it to the users device.<br />
