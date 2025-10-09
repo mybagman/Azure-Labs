@@ -31,6 +31,7 @@
 To develop the free tier concept I used google colab to develop, write, and run my "application". During this process there were alot of issues with the free tier API as I was trying to use Open AI, but once I switched to Gemini it started to work. The quality of report that the Gemini API produces is subpar but it proves the concept.<br />
 <br />
 <img src="https://i.imgur.com/PX621jm.jpeg"  height="80%" width="80%" <br />
+ <br />
  <br />Above is an example of the script used.<br />
 <br />When The script is run it uploads a blank interview performa for the AI to reference. It then prompts the user to upload a document (the interview notes). It then sends the notes to the Gemini AI and once analysed it downloads a doc.x file to the users device. This was the easiest way to prove the concept while also being able to demonstrate it from anywhere.<br />
 <br />
